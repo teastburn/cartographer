@@ -1,0 +1,10 @@
+package: github.com/teastburn/cartographer
+import:
+- package: github.com/labstack/echo
+  version: ~3.2.1
+- package: github.com/gorilla/websocket
+  version: ~1.2.0
+- package: gopkg.in/matryer/try.v1
+  version: master
+- package: github.com/olebedev/emitter
+  version: 9110dbae3d07cb26c2993dbf3bdbd0aad98329f9

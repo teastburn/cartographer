@@ -1,0 +1,21 @@
+FROM golang:1.8.3
+
+ENV GOBIN /usr/local/bin
+ENV GOPATH /opt/go
+ENV PROJNAME cartographer
+ENV SRCPATH github.com/teastburn/$PROJNAME
+
+RUN go get github.com/githubnemo/CompileDaemon
+
+COPY . $GOPATH/src/$SRCPATH
+WORKDIR $GOPATH/src/$SRCPATH
+
+RUN curl https://glide.sh/get | sh # TODO ensure version
+RUN glide install
+
+RUN apt-get update \
+ && apt-get install htop
+
+CMD ['CompileDaemon', '-command="./cartographer"', '-graceful-kill=true', '-log-prefix=false']
+
+EXPOSE 8080
