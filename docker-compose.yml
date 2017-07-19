@@ -6,8 +6,6 @@ services:
       dockerfile: DockerfileDev
     ports:
      - '8080:8080'
-    depends_on:
-      - 'cassandra'
     volumes:
       - '.:/opt/go/src/github.com/teastburn/cartographer'
     command: 'CompileDaemon -command="./cartographer" -graceful-kill=true -log-prefix=false'

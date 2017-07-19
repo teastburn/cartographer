@@ -47,7 +47,6 @@ TODO
 * Make JS not so 2000s
 * Input validation
 * Socket origin restrictions
-* Write data to DB? Is this useful?
 * Unit test concurrency model
 
 ## Meta

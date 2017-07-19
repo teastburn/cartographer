@@ -18,8 +18,6 @@ const channelName = "main:write_loc"
 // config options (cli)
 var (
 	serverPort = flag.Int("p", 8080, "Port to listen on")
-	dbHost     = flag.String("d", "cassandra", "Cx host")
-	pointTTL   = flag.Int("ttl", 36000, "TTL in seconds of the life of a row")
 )
 
 var (
@@ -89,11 +87,6 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 	e.Logger.SetLevel(log.DEBUG)
-
-	err := dbInit(*dbHost)
-	if err != nil {
-		e.Logger.Fatalf("Failed to connect to database: %v", err)
-	}
 
 	e.Static("/static", "static")
 

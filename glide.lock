@@ -1,20 +1,10 @@
 hash: f2e60ef12a54b3d40a768c70efdf2e94f0b6b06d4d18c40e86740e07c666b3df
-updated: 2017-07-17T20:33:06.886253211Z
+updated: 2017-07-18T12:59:16.496754336-07:00
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: a539ee1a749a2b895533f979515ac7e6e0f5b650
-- name: github.com/gocql/gocql
-  version: 88748c7b290d13b288055f5dea4d1c49d44db06d
-  subpackages:
-  - internal/lru
-  - internal/murmur
-  - internal/streams
-- name: github.com/golang/snappy
-  version: 553a641470496b2327abcac10b36396bd98e45c9
 - name: github.com/gorilla/websocket
   version: ea4d1f681babbce9545c9c5f3d5194a789c89f5b
-- name: github.com/hailocab/go-hostpool
-  version: e80d13ce29ede4452c43dea11e79b9bc8a15b478
 - name: github.com/labstack/echo
   version: 935a60782cbbc55110e7bd4b33120e4567cbee43
   subpackages:
@@ -26,23 +16,23 @@ imports:
   - color
   - log
   - random
-- name: github.com/matryer/try
-  version: 9ac251b645a2628ef89dbd2986987cc1299408ff
 - name: github.com/mattn/go-colorable
   version: 3fa8c76f9daed4067e4a806fb7e4dc86455c6d6a
 - name: github.com/mattn/go-isatty
   version: fc9e8d8ef48496124e79ae0df75490096eccf6fe
 - name: github.com/olebedev/emitter
   version: 9110dbae3d07cb26c2993dbf3bdbd0aad98329f9
+- name: github.com/valyala/bytebufferpool
+  version: e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7
 - name: github.com/valyala/fasttemplate
   version: dcecefd839c4193db0d35b88ec65b4c12d360ab0
 - name: golang.org/x/crypto
-  version: 7f7c0c2d75ebb4e32a21396ce36e87b6dadc91c9
+  version: dd85ac7e6a88fc6ca420478e934de5f1a42dd3c6
   subpackages:
   - acme
   - acme/autocert
 - name: golang.org/x/net
-  version: b3756b4b77d7b13260a0a2ec658753cf48922eac
+  version: f01ecb60fe3835d80d9a0b7b2bf24b228c89260e
   subpackages:
   - http2
   - http2/hpack
@@ -59,8 +49,6 @@ imports:
   - transform
   - unicode/bidi
   - unicode/norm
-- name: gopkg.in/inf.v0
-  version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
 - name: gopkg.in/matryer/try.v1
   version: 312d2599e12e89ca89b52a09597394f449235d80
 testImports: []
