@@ -6,9 +6,9 @@ services:
       dockerfile: DockerfileDev
     ports:
      - '8080:8080'
+     - '6060:6060'
     volumes:
       - '.:/opt/go/src/github.com/teastburn/cartographer'
-    command: 'CompileDaemon -command="./cartographer" -graceful-kill=true -log-prefix=false'
-
-
-
+    environment:
+      - NR_KEY
+    command: 'CompileDaemon -command="./cartographer -n=${NR_KEY} -s=${NR_SUFFIX}" -graceful-kill=true -log-prefix=false'

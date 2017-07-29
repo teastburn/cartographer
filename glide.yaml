@@ -8,3 +8,5 @@ import:
   version: master
 - package: github.com/olebedev/emitter
   version: 9110dbae3d07cb26c2993dbf3bdbd0aad98329f9
+- package: github.com/newrelic/go-agent
+  version: ~1.9.0

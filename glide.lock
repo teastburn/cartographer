@@ -1,5 +1,5 @@
-hash: f2e60ef12a54b3d40a768c70efdf2e94f0b6b06d4d18c40e86740e07c666b3df
-updated: 2017-07-18T12:59:16.496754336-07:00
+hash: f60b681b41639c8b18e4c5e3af28f1b291be04ea7985a613b3b88d8993975676
+updated: 2017-07-19T21:07:32.885667438Z
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: a539ee1a749a2b895533f979515ac7e6e0f5b650
@@ -20,6 +20,14 @@ imports:
   version: 3fa8c76f9daed4067e4a806fb7e4dc86455c6d6a
 - name: github.com/mattn/go-isatty
   version: fc9e8d8ef48496124e79ae0df75490096eccf6fe
+- name: github.com/newrelic/go-agent
+  version: 29ec3cd1bb2f21d21d36da37dae52695cb2c3a17
+  subpackages:
+  - internal
+  - internal/jsonx
+  - internal/logger
+  - internal/sysinfo
+  - internal/utilization
 - name: github.com/olebedev/emitter
   version: 9110dbae3d07cb26c2993dbf3bdbd0aad98329f9
 - name: github.com/valyala/bytebufferpool
@@ -27,19 +35,19 @@ imports:
 - name: github.com/valyala/fasttemplate
   version: dcecefd839c4193db0d35b88ec65b4c12d360ab0
 - name: golang.org/x/crypto
-  version: dd85ac7e6a88fc6ca420478e934de5f1a42dd3c6
+  version: 4bc1c249b153ce1da9f55437759cec51fe6acabb
   subpackages:
   - acme
   - acme/autocert
 - name: golang.org/x/net
-  version: f01ecb60fe3835d80d9a0b7b2bf24b228c89260e
+  version: 02ac38e2528ff4adea90f184d71a3faa04b4b1b0
   subpackages:
   - http2
   - http2/hpack
   - idna
   - lex/httplex
 - name: golang.org/x/sys
-  version: 4cd6d1a821c7175768725b55ca82f14683a29ea4
+  version: 7a4fde3fda8ef580a89dbae8138c26041be14299
   subpackages:
   - unix
 - name: golang.org/x/text

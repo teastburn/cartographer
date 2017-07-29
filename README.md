@@ -3,6 +3,19 @@
 
 This is an example project that updates a map in real time with millions of geocoordinates per day.
 
+## Features
+* Blazing -- Sub millisecond response times for writing locations
+* Fast and Secure -- HTTP2 and HTTPS only
+* Horizontally scalable
+* Scales to millions of listeners
+* New Relic integration
+* Demo suite
+
+## Reasoning
+
+Cartographer was built as a side project to handle very high loads of inbound traffic, 
+and learn about scaling websockets, http2 and auto signing of TLS connections.
+
 ## Installation
 
 OS X & Linux:
@@ -41,12 +54,14 @@ TODO
 
 ## TODO
 
+* Import is fast. Need to slow down map consumption though.
 * Scale bottlenecks:
   * Number of websocket listeners -- move to distributed pubsub model
 * Better docs
 * Make JS not so 2000s
+* Prettify GUI
 * Input validation
-* Socket origin restrictions
+* Better error handling and communication
 * Unit test concurrency model
 
 ## Meta
